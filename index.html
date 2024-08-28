@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaka</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"> <!-- Fuentes elegantes -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Fuente principal para el cuerpo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Color del texto blanco para contraste */
+            text-align: center;
+            overflow: hidden; /* Oculta cualquier overflow de elementos */
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            color: #fff; /* Color del texto blanco */
+            position: relative;
+            z-index: 1;
+        }
+        .title {
+            font-family: 'Great Vibes', cursive; /* Fuente elegante para el título */
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff4081; /* Color rosa para el título */
+        }
+        .message {
+            font-family: 'Playfair Display', serif; /* Fuente bonita para el mensaje */
+            font-size: 24px; /* Tamaño del texto reducido */
+            margin-bottom: 20px;
+            color: #fff; /* Color blanco para el mensaje */
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: #ff4081; /* Fondo rosa para los botones */
+            color: #fff; /* Texto blanco para los botones */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button:hover {
+            background-color: #e040fb; /* Fondo rosa más claro en hover */
+            color: #000; /* Texto negro en hover */
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff; /* Color blanco para el texto de la respuesta */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Mi amor Karol</div>
+        <div class="message">¿Me perdonas?</div>
+        <button class="button button-yes" onclick="respond('yes')">Sí</button>
+        <button class="button button-no" onclick="respond('no')">No</button>
+        <div id="response"></div>
+    </div>
+
+    <script>
+        function respond(answer) {
+            const responseDiv = document.getElementById('response');
+            if (answer === 'yes') {
+                responseDiv.innerHTML = '<p>Mi amor, me he dado cuenta de lo importante que eres para mí y de cuánto valoro nuestra relación. Me duele haberte causado tristeza, y estoy profundamente arrepentido. Te prometo que aprenderé de mis errores y haré todo lo posible para ser mejor por ti y por nosotros. Eres mi todo, y te amo con todo mi corazón. Por favor, perdóname y déjame demostrarte cuánto significas para mí &lt;3</p>';
+            } else {
+                responseDiv.innerHTML = '<p>Te voy a funar, elige bien >:v</p>';
+            }
+        }
+    </script>
+</body>
+</html>
